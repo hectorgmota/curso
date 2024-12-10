@@ -1,0 +1,11 @@
+:root {
+  --preto: #000000;
+  --branco: #ffffff;
+  --preto-16: rgba(0, 0, 0, 16%);
+
+  --cinza: rgba(153, 153, 153, 12%);
+  --cinza-claro: #EEEEED;
+  --cinza-claro-2: #D9D9D9;
+  --laranja: #cd580a;
+  --laranja-hover: #9a3e00;
+}

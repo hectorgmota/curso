@@ -1,0 +1,79 @@
+body {
+  overflow: hidden;
+  display: flex;
+}
+
+.barra-lateral-dashboard {
+  width: 20%;
+  height: 100vh;
+  background-color: var(--cinza-claro-2);
+  padding-top: 2rem;
+}
+
+.barra-lateral-dashboard .search {
+  margin: 1rem;
+  padding: 1rem 0;
+  background-color: var(--cinza-claro);
+}
+
+.barra-pesquisa {
+  background-color: var(--cinza-claro);
+  border-radius: 20px;
+  margin: 1rem 3rem;
+}
+
+.barra-pesquisa i {
+  padding: 1rem 0 0 1rem;
+  color: var(--laranja);
+}
+
+.filtros {
+  color: var(--laranja);
+  margin-left: 3rem;
+}
+
+.filtros h3 {
+  font-family: interRegular;
+  font-size: 20px;
+}
+
+.filtros i {
+  margin-left: 10px;
+}
+
+.box-filtros {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.filtro {
+  padding: 1rem;
+  width: 80px;
+  border-radius: 20px;
+}
+
+.custom-select select {
+  background-color: var(--cinza-claro);
+  padding: 1rem 1rem;
+}
+
+.custom-select {
+  padding-bottom: 1rem;
+}
+
+.check-box form {
+  background-color: var(--cinza-claro);
+  width: 85%;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.check-box label {
+  font-family: interRegular;
+  color: var(--preto);
+}
+
+.check-box input {
+  margin: 0 1rem;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="/assets/css/pages/dashboard/dashboard.css" />
+    <!--  -->
+
+    <!-- ICONES -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!--  -->
+
+    <!-- TÍTULO -->
+    <title>Dashboard</title>
+    <!--  -->
+  </head>
+  <body>
+    <aside class="barra-lateral-dashboard">
+      <div class="barra-pesquisa">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input class="search" type="text" placeholder="Busque por serviço ou loja" />
+      </div>
+
+      <div class="filtros">
+        <h3>Filtros<i class="fa-solid fa-align-left"></i></h3>
+        <div class="box-filtros">
+          <input type="text" class="filtro" placeholder="Min" />
+          <input type="text" class="filtro" placeholder="Max" />
+        </div>
+        <div class="custom-select">
+          <select>
+            <option value="">Selecione uma opção</option>
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+          </select>
+        </div>
+        <div class="check-box">
+          <form>
+            <label> Maçã<input type="checkbox" name="filtro" value="Barbearia" /></label><br />
+            <label> Salão de Beleza<input type="checkbox" name="filtro" value="Salão de Beleza" /></label><br />
+            <label> Maquiagem<input type="checkbox" name="filtro" value="Maquiagem" /></label><br />
+            <label> Manicure<input type="checkbox" name="filtro" value="Manicure" /></label><br />
+          </form>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="scroll-container">
+        <div class="barbearia">
+          <div class="galeria-container">
+            <div class="img-grande">
+              <button class="img-pop-up" id="openModal1">
+                <img src="/assets/imgs/container-img-01.png" alt="" />
+              </button>
+            </div>
+            <div class="img-menores">
+              <div>
+                <img src="/assets/imgs/container-img-02.png" alt="" />
+              </div>
+              <div>
+                <img src="/assets/imgs/container-img-03.png" alt="" />
+              </div>
+              <div>
+                <img src="/assets/imgs/container-img-04.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="barbearia-contents">
+            <h3>La Mafia Barbearia Social Club</h3>
+            <div class="avaliacao">
+              <p>4,8</p>
+              <img src="/assets/imgs/estrelas.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="barbearia">
+          <div class="galeria-container">
+            <div class="img-grande">
+              <button class="img-pop-up" id="openModal2">
+                <img src="/assets/imgs/damasio-01.png" alt="" />
+              </button>
+            </div>
+            <div class="img-menores">
+              <div>
+                <img src="/assets/imgs/damasio-02.png" alt="" />
+              </div>
+              <div>
+                <img src="/assets/imgs/damasio-03.png" alt="" />
+              </div>
+              <div>
+                <img src="/assets/imgs/damasio-04.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="barbearia-contents">
+            <h3>Barbearia Damasio</h3>
+            <div class="avaliacao">
+              <p>4,8</p>
+              <img src="/assets/imgs/estrelas.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal" style="display: none">
+        <div class="modal-content">
+          <button id="closeModalBtn" class="close-button">
+            <img src="/assets/imgs/arrow-left-circle.svg" alt="" />
+          </button>
+
+          <!-- Adicionando o Wallpaper -->
+          <div class="modal-header">
+            <img src="/assets/imgs/bg-modal.png" alt="Barbearia Wallpaper" class="modal-wallpaper" />
+          </div>
+
+          <div class="modal-body">
+            <h2>Serviço:</h2>
+            <p>Corte De Cabelo</p>
+            <h3>Horários Disponíveis:</h3>
+            <div class="horarios">
+              <button>08:00</button>
+              <button>08:30</button>
+              <button>09:30</button>
+              <button>10:30</button>
+              <button>11:00</button>
+              <button>13:00</button>
+              <button>13:30</button>
+              <button>14:30</button>
+              <button>15:00</button>
+              <button>15:30</button>
+              <button>16:30</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="marcar-btn">Marcar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/assets/js/popup.js"></script>
+  </body>
+</html>

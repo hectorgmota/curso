@@ -1,0 +1,56 @@
+.scroll-container {
+  padding: 5%;
+  width: 1500px;
+  height: 920px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.galeria-container {
+  max-width: 800px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.img-grande {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-grande img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.img-menores {
+  display: flex;
+  gap: 10px;
+}
+
+.img-menores img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.barbearia {
+  display: flex;
+}
+
+.barbearia-contents{
+    padding: 1rem;
+}
+
+.barbearia-contents h3 {
+  font-family: interRegular;
+  font-size: 24px;
+}
+
+.avaliacao {
+  display: flex;
+  font-family: interRegular;
+}
